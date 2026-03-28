@@ -56,7 +56,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 						<h1 class="text-4xl sm:text-5xl leading-snug pt-12 font-bold">
 							{title}
 						</h1>
-						<div class="text-lg flex items-center gap-4 flex-wrap py-8">
+						<div class="text-lg flex items-center gap-4 flex-wrap py-0">
 							<!-- Publish date -->
 							<!--span>
 								<Icon
@@ -92,11 +92,11 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 						{
 							blogImages[coverImagePath] && (
 								<>
-									<Image
+									<!--Image
 										src={blogImages[coverImagePath]()}
 										alt={title}
 										class="rounded-lg"
-									/>
+									/-->
 									
 									
 								</>
@@ -104,7 +104,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 						}
 					</div>
 					<div
-						class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
+						class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto pt-8"
 					>
 						<slot />
 					</div>
