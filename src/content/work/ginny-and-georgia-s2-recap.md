@@ -15,5 +15,3 @@ Written and produced with Tala Yunis.
 
 Published by The Home of Happy / BMG Production Music.
 
-Watch the recap on YouTube <a href="https://youtu.be/mifli51yFfs" target="_blank">here</a>.
-
