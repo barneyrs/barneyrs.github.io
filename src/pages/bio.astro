@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import mandolinImage from '../assets/mandolin.jpg';
+import headshotImage from '../assets/headshot26.jpg';
+---
+
+<BaseLayout>
+	<main class="app-container pt-36">
+		<h1 class="text-6xl pb-2 font-bold">Bio</h1>
+	</main>
+	<div class="app-container bio-container">
+		<section class="py-12 mb-8">
+			<div
+				class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
+			>
+				<p>
+				Barney RS is a composer and producer from Brighton, UK.
+			</p>
+			<p>
+				Barney has incrementally added strings to his bow.
+				<br>
+				Since childhood he has played guitar, piano and drum kit, and has picked up mandolin, cavaco and various percussion instruments over time. His passion for percussion extends outside of composing work and sees him play every weekend with Brighton School of Samba.
+			</p>
+			<p>
+				Barney RS forms one third of the composer trio Northeast (with Susanne Følsvik Rønnekleiv & Hedda Røste) who have seen success writing powerful, anthemic music for film and TV.
+				<br>
+				In 2023, their song "Go Slowly" was nominated for "Best Folk Production Music Track" at the Production Music Awards. In 2024, their song "Is This Gonna End Us?" was used in the trailer for Marcelo Tobar's Straight.
+			</p>
+			<p>
+				His work has been heard on the BBC, Netflix, ITV, Apple TV, Peacock, and various networks and streaming services across the globe.
+			</p>
+
+
+			<p>
+				In 2025, Barney won the Composer Spotlight Award at the Production Music Awards.
+			</p>
+			</div>
+		</section>
+		<div class="app-container bio-container" style="width:50%;">
+			<Image src={headshotImage} alt="A bird sitting on a nest of eggs." style="object-fit: contain; align-self: baseline;" class="px-12"/>
+		</div>
+	</div>
+	<!--Image src={mandolinImage} alt="A bird sitting on a nest of eggs." /-->
+</BaseLayout>
